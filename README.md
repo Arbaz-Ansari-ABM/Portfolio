@@ -3,6 +3,8 @@ A portfolio show skills, experience, and achievements. It highlights my best wor
 
 On this code we can store data on Google Sheets.
 
+Set the image path by your folder.
+
 1. login with email.
 2. create heading but condition The name should be same as you gave in your html code under input tag after class, the same name will be written here.
 3. then on the nav click on.
