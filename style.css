@@ -1,0 +1,586 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+section, #home, #about, #contact #skills {
+    min-height: 100vh;
+    padding: 10rem 9% 1rem;
+}
+
+body {
+    background-color: rgb(0, 4, 17);
+    color: white;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 1.5rem;
+    width: 82rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: "Sevillana", cursive;
+    font-size: 50px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar a {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.5rem;
+    margin-left: 3.2rem ;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: aqua;
+    transition: color 1s ease, transform 1s ease;
+}
+
+#intro-p {
+    color: aqua;
+
+}
+
+.intro {
+    position: relative;
+    top: 5rem;
+    right: 3.5rem;
+    font-size: 2rem;
+    width: 45rem;
+}
+
+#para {
+    font-family: "Playwrite CU", cursive;
+    font-size: 28px;
+    opacity: 0.8;
+}
+
+.h1-intro-3, .h1-intro-2 {
+    display: flex;
+    align-items: center;
+    font-family: "Nerko One", cursive;
+}
+
+#intro-p {
+    font-family: "Nunito Sans", sans-serif;
+    overflow: hidden; 
+    border-right: 2px solid;
+    position: absolute;
+    left: 11rem;
+    animation: typing 3s steps(22) infinite alternate;
+    max-width: 23rem;
+}
+
+/* Typing effect */
+@keyframes typing {
+    0%, 50% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+.image-pix {
+    background-image: url('assest/arbaz.png');
+    background-size: cover;
+    width: 25rem ;
+    height: 30rem;
+    position: absolute;
+    left: 55rem;
+    bottom: 7rem;
+    filter: drop-shadow(2px 2px 20px cyan); 
+    animation: image 1s infinite alternate;;
+}
+
+.image-pix:hover {
+    opacity: 0.5;
+    animation: none;
+}
+
+@keyframes image {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(20px, 20px);
+    }
+}
+
+.h1-intro-1, .h1-intro-3 {
+    padding-bottom: 1rem;
+}
+
+.social-media a {
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 50%;
+    background: transparent;
+    border: 3px solid aqua;
+    color: aqua;
+    height: 40px;
+    width: 40px;
+    margin: 30px 15px 30px 0;
+    transition: .5s ease;
+}
+
+.social-media a:hover {
+    background-color: aqua;
+    color: rgb(0, 4, 17);
+    box-shadow: 0 0 20px aqua;
+}
+
+.btn{
+    font-family: "Nerko One", cursive;
+    padding: 0.75rem 0 0 5rem;
+    display: inline-block;
+    height: 3.5rem;
+    width: 16rem;
+    background-color: aqua;
+    border-radius: 40px;
+    box-shadow: 0 0 10px aqua;
+    font-size: 1.8rem;
+    color: rgb(0, 4, 17);
+}
+
+/* about page */
+
+.btn-box { 
+    position: relative;
+    height: 3.5rem;
+    width: 10rem;
+    box-shadow: 0 0 10px aqua;
+    font-size: 1.8rem;
+    background-color: aqua;
+    border-radius: 20px;
+    font-family: "Nerko One", cursive;
+    color: rgb(0, 4, 17);
+}
+
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgb(0, 4, 17);
+    padding-bottom: 4rem;
+}
+
+.heading {
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 5rem;
+}
+
+span {
+    color: aqua;
+}
+
+.about-image {
+    height: 20rem;
+    width: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+}
+
+.about-image img {
+    width: 85%;
+    border-radius: 50%;
+    filter: drop-shadow(2px 2px 20px cyan); 
+   
+}
+
+.circle-spin {
+    position: absolute;
+    transform: translate(-50%, -50%) rotate(0);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border-top: .2rem solid rgba(0, 151, 151, 0.226);
+    border-bottom: .2rem solid rgba(0, 151, 151, 0.226);
+    border-left: .2rem solid aqua;
+    border-right: .2rem solid aqua;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.about-content {
+    padding-top: 5rem;
+    text-align:center;
+}
+
+.about-content h3 {
+    font-size: 2rem;
+}
+
+.about-content p {
+    font-size: 1rem;
+    margin: 2rem 0 3rem;
+}
+
+/* Education page */
+
+#education {
+    height: 50rem;
+}
+
+.h3-32 {
+    font-size: 3rem;
+}
+
+.design {
+    background-color: rgb(0, 85, 6);
+    position: relative;
+    left: 20rem;
+    top: 2rem;
+    border-radius: 50%;
+    border: solid aqua ;
+    background-color: aqua;
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-bottom: 14rem;
+}
+
+.line {
+    position: relative;
+    left: 11.5px;
+    height: 16rem;
+    width: 2px;
+    background-color: aqua;
+}
+
+.standard {
+    position: relative;
+    left: 25rem;
+    bottom: 45rem;
+    border: 2px solid aqua;
+    height: 8rem;
+    width: 40rem;
+    padding: 0.5rem 1rem  0.5rem 1rem ;
+    margin-bottom: 3rem;
+}
+
+.standard::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgba(0, 255, 255, 0.258);
+    z-index: -1;
+    transition: .5s;
+}
+
+.standard:hover::before {
+    width: 100%;
+}
+
+#study-icons {
+    color: aqua;
+}
+
+/* skills page */
+
+.coding {
+    height: 40rem;
+    width: 35rem;
+}
+
+.lang {
+    margin-top: 4rem;
+    border: 1px solid aqua;
+    border-radius: 1rem;
+    height: 25rem;
+    width: 100%;
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem 1rem  0.5rem 1rem ;
+}
+
+.persen {
+    padding-left: 400px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+    right: 2rem;
+    bottom: 0.60rem;
+}
+
+.design-skill {
+    position: relative;
+    bottom: 1rem;
+    left: 1rem;
+    border: 1px solid aqua;
+    border-radius: 0.75rem;
+    width: 33rem;
+    height: 2.5rem;
+    
+}
+.bar {
+    display: block;
+    position: relative;
+    left: 0.5rem;
+    border-radius: 0.75rem;
+    width: 30rem;
+    height: 18px;
+    margin-top: 9px;
+}
+
+.bar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgba(0, 255, 255, 0.258);
+    transition: .5s;
+}
+
+.bar:hover::before {
+    width: 100%;
+    background-color: aqua;
+    border-radius: 0.75rem;
+}
+
+.inside-design-skill-a {
+    display: block;
+    position: relative;
+    left: 0.5rem;
+    border-radius: 0.75rem;
+    width: 30rem;
+    height: 18px;
+    margin-top: 9px;
+}
+
+.inside-design-skill-b {
+    display: block;
+    position: relative;
+    left: 0.5rem;
+    border-radius: 0.75rem;
+    width: 25rem;
+    height: 18px;
+    margin-top: 9px;
+}
+
+.inside-design-skill-c {
+    display: block;
+    position: relative;
+    left: 0.5rem;
+    border-radius: 0.75rem;
+    width: 15rem;
+    height: 18px;
+    margin-top: 9px;
+}
+
+.inside-design-skill-d {
+    display: block;
+    left: 0.5rem;
+    border-radius: 0.75rem;
+    width: 13rem;
+    height: 18px;
+    margin-top: 9px;
+    overflow: hidden;
+    position: relative;
+}
+
+.editing {
+    margin-top: 4rem;
+    border: 1px solid aqua;
+    border-radius: 1rem;
+    height: 25rem;
+    width: 100%;
+}
+
+#professonal {
+    position: relative;
+    left: 40rem;
+    bottom: 33.5rem;
+    height: 40rem;
+    width: 35rem;
+}
+
+/* Contact Page*/
+.contact-form {
+    margin-left: 6.5rem;
+    height: 15rem;
+    width: 60rem;
+}
+
+.upper, .lowwer {
+    gap: 2rem;
+    width: 60rem;
+    height: 5rem;
+    display: flex;
+}
+
+.inp {
+    position: relative;
+    top: 2rem;
+    left: 7rem;
+    width: 350px; 
+    height: 4rem;
+    padding: 0.5rem; 
+    font-size: 1rem; 
+    border: 1px solid aqua; 
+    color: white;
+    border-radius: 1rem;
+    box-sizing: border-box;
+    background: transparent;
+}
+
+.contact-textarea {
+    margin-left: 6.5rem;
+    height: 15rem;
+    width: 60rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#text-email {
+    padding: 1rem 0 0 2rem  ;
+    border: 1px solid aqua; 
+    color: white;
+    background-color: transparent;
+    height: 14rem;
+    width: 43rem;
+    position: relative;
+    bottom: 2rem;
+}
+
+.contact-btn {
+    position: relative;
+    font-size: 20px;
+    height: 3.5rem;
+    width: 9rem;
+    border: 3px solid aqua;
+    color: rgba(255, 255, 255, 0.394);
+    background: transparent;
+    border-radius: 0.75rem;
+    margin-left: 32rem;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.contact-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: aqua;
+    transition: width 0.5s ease;
+}
+
+.contact-btn:hover::before {
+    width: 100%;
+    z-index: -1;
+}
+
+.contact-btn:hover {
+    border-color: darkcyan;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    color: black;
+}
+
+/* Footer Page */
+
+#heading-footer {
+    position: relative;
+    top: 5rem;
+    right: 10rem;
+    background-color: rgba(255, 255, 255, 0.496);
+    color: black;
+    height: 13rem;
+    width: 91.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fisrt {
+    height: 20rem;
+    width: 75rem;
+    display: flex;
+    justify-content: space-between;
+    line-height: 2rem;
+}
+
+#ftb {
+    font-size: 30px;
+    padding-left: 10px;
+    padding-bottom: 1.5rem;
+}
+
+.set-footer {
+    width: 120rem;
+    position: relative;
+    top: 5rem;
+    right: 33rem;
+    text-align: center;
+}
+
+.icn {
+    font-size: 3rem;
+    position: relative;
+    right: 4rem;
+    margin-right: 3rem;
+}
+
+.left-line {
+    height: 2px;
+    width: 100rem;
+    background-color: black;
+    position: relative;
+    left: 7rem;
+}
+
+.right-line {
+    height: 2px;
+    width: 100rem;
+    background-color: black;
+    position: relative;
+    left: 50rem;
+}
+
+.text-image {
+    opacity: 0.5;
+    background-image: url(assest/pic.jpg);
+    background-size: cover;
+    height: 22rem;
+    width: 91.8rem;
+    position: relative;
+    top: 5rem;
+    right: 10rem;
+}
+
+/* create a responsive web */ 
