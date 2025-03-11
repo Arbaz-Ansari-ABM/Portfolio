@@ -516,11 +516,11 @@ span {
 
 #heading-footer {
     position: relative;
-    top: 5rem;
+    top: 20rem;
     right: 10rem;
-    background-color: rgba(255, 255, 255, 0.496);
+    background-color: aqua;
     color: black;
-    height: 13rem;
+    height: 12rem;
     width: 91.8rem;
     display: flex;
     justify-content: space-between;
@@ -583,4 +583,150 @@ span {
     right: 10rem;
 }
 
-/* create a responsive web */ 
+.copyrights {
+    display: none;
+}
+
+/* responsive web */ 
+@media screen and (max-width: 700px) {
+    section {
+        width: 100%;
+        padding: 10px;
+    }
+    
+    /* home page */ 
+    .logo {
+        position: relative;
+        right: 30px;
+        font-size: 50px;
+    }
+    #intro-p {
+        position: relative;
+        left: 1rem;
+    }
+    .h1-intro-1, .h1-intro-2, .h1-intro-3, #para {
+        font-size: 15px;
+        position: relative;
+
+        left: 5rem;
+    }
+    .image-pix {
+        position: relative;
+        left: 4rem;
+        width: 15.5rem ;
+        height: 18rem;
+    }
+    .social-media {
+        position: relative;
+        top: 17rem;
+        left: 8rem;
+    }
+    .btn {
+        position: relative;
+        top: 17rem;
+        left: 5.5rem;
+    }
+
+    /* about page */ 
+    #about{
+        position: relative;
+        right: 40.5px;
+    }
+
+    .h3-32 {
+        font-size: 35px;
+        display: flex;
+        justify-content: center;
+    }
+    .h3-33 {
+        font-size: 35px;
+        position: relative;
+        left: 5rem;
+    }
+    #qualification {
+        position: relative;
+        right: 20rem;
+    } 
+    .standard {
+        width: 60%;
+        height: 60%;
+    }
+    .design-set {
+        position: relative;
+        right: 19rem;
+    }
+    .lang {
+        width: 55%;
+        position: relative;
+        left: 1.5rem;
+    }
+    .design-skill {
+        width: 90%;
+    }
+
+    .bar {
+        width: 90%;
+    }
+    .persen {
+        position: relative;
+        right: 6rem;
+    }
+    .lang-2, .professonal-head {
+        display: none;
+    }
+    .contact-form {
+        position: relative;
+        right: 5rem;
+    }
+    .upper {
+        position: relative;
+        right: 6rem;
+    }
+    .inp {
+        position: relative;
+        top: 2rem;
+        right: 6rem;
+        width: 20rem;
+
+    }
+
+    .upper, .lowwer {
+        position: relative;
+        top: 5rem;
+        flex-direction: column-reverse;
+        gap: 6rem;
+    }
+    
+    .lowwer {
+        position: relative;
+        right: 6rem;
+    }
+    .contact-textarea {
+        width: 80%;
+        position: relative;
+        top: 12rem;
+        right: 4rem;
+
+    }
+    .contact-btn {
+        position: relative;
+        right: 24.5rem;
+        top: 12rem;
+    }
+    .fisrt {
+        flex-direction: column;
+        padding-left: 8rem;
+    }
+    .ftb {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    #heading-footer {
+        display: none;
+    } 
+    .copyrights {
+        display: block;
+        padding-left: 4rem;
+        padding-bottom: 1rem;
+    }
+}
