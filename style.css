@@ -155,6 +155,58 @@ a {
     color: rgb(0, 4, 17);
 }
 
+.inbox-scroll {
+    text-align: center;
+    display: none;
+    margin-top: 19rem;
+}
+
+/* Arrows Animation */
+.arrows {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.arrow {
+    width: 30px;
+    height: 30px;
+    border-right: 4px solid aqua;
+    border-bottom: 4px solid aqua;
+    transform: rotate(45deg);
+    margin: 5px;
+    animation: bounce 1.5s infinite;
+}
+
+.arrow:nth-child(1) {
+    animation-delay: 0s;
+}
+.arrow:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.arrow:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        opacity: 0;
+        transform: translateY(-10px) rotate(45deg);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(0px) rotate(45deg);
+    }
+}
+
+/* Scroll Down Text Animation */
+.scroll-text {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: aqua
+}
+
 /* about page */
 
 .btn-box { 
@@ -587,6 +639,83 @@ span {
     display: none;
 }
 
+/* Hide Hamburger by Default */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 35px;
+    height: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 100;
+}
+
+.menu-toggle div {
+    width: 100%;
+    height: 5px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    transition: all 0.4s ease;
+}
+
+/* Full-screen Menu */
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 195, 255);
+    display: flex;
+    flex-direction: column;
+    margin-left: 3rem;
+    transition: right 0.5s ease-in-out;
+    z-index: 99;
+}
+
+.menu-overlay a:hover {
+    color: aqua;
+}
+
+.menu-overlay a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    font-size: 24px;
+    padding: 15px;
+    display: block;
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Active Menu */
+.menu-overlay.show {
+    right: 0;
+}
+
+/* Animation for Hamburger */
+.menu-toggle.active div:nth-child(1) {
+    transform: translateY(12px) rotate(45deg);
+}
+
+.menu-toggle.active div:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active div:nth-child(3) {
+    transform: translateY(-12px) rotate(-45deg);
+}
+
 /* responsive web */ 
 @media screen and (max-width: 700px) {
     section {
@@ -612,7 +741,8 @@ span {
     }
     .image-pix {
         position: relative;
-        left: 4rem;
+        left: 7rem;
+        bottom: 40rem;
         width: 15.5rem ;
         height: 18rem;
     }
@@ -728,5 +858,17 @@ span {
         display: block;
         padding-left: 4rem;
         padding-bottom: 1rem;
+    }
+    
+    .menu-toggle {
+        display: flex;
+    }
+    .navbar {
+        display: none;
+    }
+
+    .inbox-scroll {
+        display: block;
+        padding-right: 13.5rem;
     }
 }
