@@ -24,6 +24,24 @@
                 <a href="#contact">Contact</a>
             </nav>
     </header>
+
+    <!-- Hamburger Icon (Only for Small Screens) -->
+    <div class="menu-toggle" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <!-- Full-Screen Menu (Hidden by Default) -->
+    <div class="menu-overlay">
+        <span class="close-btn" onclick="toggleMenu()">✖</span>
+        <a href="#intro">Home</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </div>
+
     <!--Navbar-->
 
     <main>
@@ -42,8 +60,18 @@
                     <a href="https://www.linkedin.com/in/arbaz-ahmad-ansari-a2b53621b/" target="_main"><i class='bx bxl-linkedin' ></i></a>
                 </div>
                 <!-- Download CV button -->
-                <a href="student.jpg" download="My-CV.jpg" class="btn">Download CV</a>
-            </div>
+                <a href="assest/cv.pdf" download="Arbaz's CV.pdf" class="btn">Download CV</a>
+
+                <!-- Scroll icon-->
+                <div class="inbox-scroll">
+                    <div class="arrows">
+                        <div class="arrow"></div>
+                        <div class="arrow"></div>
+                        <div class="arrow"></div>
+                    </div>
+                    <div class="scroll-text">Scroll Down</div>
+                </div>
+
             <!--home page image-->
             <div class="image-pix"></div>
         </section>
@@ -59,10 +87,11 @@
             </div>
             <div class="about-content">
                 <h3>Frontend Developer</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora a exercitationem, voluptatem, quae ratione, consectetur nemo deserunt reiciendis maiores asperiores veniam excepturi nobis. Est nam, neque quisquam odio sequi cupiditate.
-                Magni eaque recusandae expedita adipisci natus, saepe dolor sunt dicta dolore ratione eius repellat, repellendus provident odit aliquam cum delectus nostrum ab quisquam. Repudiandae assumenda incidunt rerum illum dolore porro.</p>
-                <a href="#">
-                    <button class="btn-box btns">Read More</button>
+                <p>I'M doing MCA in Galgotias University. Web Developer I’m a passionate web developer with a focus on creating seamless user experiences using technologies.
+                    Skilled Web Developer with expertise HTML CSS and JAVASCRIPT, PHP, MYSQL, BOOTSTRAP. Recent graduate with a Bachelor's degree in Computer Application. and now Currently doing MCA in galgotias University Noida. Highly motivated and eager to start a career in the tech industry. Known for being a quick learner and adaptable to new challenges. Seeking an opportunity to contribute to a dynamic team and grow professionally in a supportive environment.
+                </p>
+                <a href="https://github.com/Arbaz-Ansari-ABM">
+                    <button class="btn-box btns">GitHub</button>
                 </a>
             </div>
         </section>
@@ -202,7 +231,7 @@
                     <textarea name="email_text" id="text-email" placeholder="text here..."></textarea>
                 </div>
                 <button class="contact-btn" type="submit">Submit</button>
-                <div id="loading" style="display:none;">Saving...</div> 
+                <div id="loading" style="display:none;">Saving...</div>
             </form>
         </div>
     </section>
@@ -238,8 +267,8 @@
                     <p>Uttar Pradesh</p>
                     <p>206001</p>
                     <p>India</p>
-                    <p>+91 XX XXXX XXXX</p>
-                    <p>xyx093@gmail.com</p>
+                    <p>+91 7983297137</p>
+                    <p>arbazahmadansari03@gmail.com</p>
                 </div>
             </div>
            <div id="heading-footer">
