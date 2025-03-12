@@ -16,3 +16,16 @@ form.addEventListener('submit', (e) => {
       loading.style.display = 'none';
     });
 });
+
+function toggleMenu() {
+  document.querySelector('.menu-overlay').classList.toggle('show');
+  document.querySelector('.menu-toggle').classList.toggle('active');
+}
+
+// Close menu when a link is clicked
+document.querySelectorAll('.menu-overlay a').forEach(link => {
+  link.addEventListener('click', () => {
+    document.querySelector('.menu-overlay').classList.remove('show');
+    document.querySelector('.menu-toggle').classList.remove('active');
+  });
+});
