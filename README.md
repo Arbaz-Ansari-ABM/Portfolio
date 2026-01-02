@@ -1,59 +1,20 @@
-# 🌐 Animated Portfolio Website
+# Portfolio
 
-A sleek, responsive, and fully customizable **animated portfolio website** built using **React.js** and **Tailwind CSS**. This project gained **27K+ views** on [YouTube]([https://youtube.com/your-video-link](https://youtu.be/ypSc8HEurGQ?si=yI3GJCye3sAKoemW)) – loved by developers and students for its modern design and clean code.
+link for demo - https://arbaz-ansari-abm.github.io/Portfolio/
 
-## 🚀 Live Demo
+A portfolio show skills, experience, and achievements. It highlights my best work, including projects, case studies, and accomplishments. It serves as a professional snapshot, demonstrating your expertise and unique value to potential employers or clients. Tailor it to your strengths and the roles you're targeting.
 
-🔗 [View Portfolio Live](https://tarunkaushik.vercel.app/)
+On this code we can store data on Google Sheets.
 
-## 🛠️ Tech Stack
+Set the image path by your folder.
 
-- ⚛️ React.js
-- 🎨 Tailwind CSS
-- 💾 Vercel(for deployment)
-
-## 📁 Features
-
-- Responsive design for all screen sizes 📱💻
-- Smooth scroll and animation effects ✨
-- Clean and modular React components 🧩
-- Easy to customize with Tailwind utility classes 🎯
-- Professional sections: About, Skills, Projects, Contact, etc. 👨‍💻
-
-
-## 🧑‍💻 How to Use
-
-### 1. Clone the Repo
-
-```bash
-git clone [https://github.com/codingmastr/Tarun-s-Portfolio.git]
-cd your-repo-name
-````
-
-### 2. Install Dependencies
-
-```bash
-npm install
-```
-
-### 3. Run the App
-
-```bash
-npm start
-```
-
-### 4. Build for Production
-
-```bash
-npm run build
-```
-
-## 📹 YouTube Tutorial
-
-Watch the full build on YouTube:
-📺 [React Portfolio Website - 27K+ Views](https://youtu.be/ypSc8HEurGQ?si=winjJhc9qzNrCqLD)
-
-## 🌟 Credits
-
-This project was created with ❤️ by [Tarun Kaushik](https://tarunkaushik.vercel.app/).
-If you like it, feel free to ⭐ this repository and share!
+1. login with email.
+2. create heading but condition The name should be same as you gave in your html code under input tag after class, the same name will be written here.
+3. then on the nav click on.
+(1). Extentions then
+(2). Apps Script then
+(3). paste the sheet.txt file which is given.
+(4). Save and Run.
+(5). Deploy >> New devployment >> select type setting icon >> who has accsess(Anyone) >> Deploy.
+(6). Now we have a js link which u need to paste on js code place of url and save.
+(7). Done !!!!!
