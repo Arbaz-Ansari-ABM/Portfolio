@@ -1,20 +1,69 @@
 # Portfolio
 
-link for demo - https://arbaz-ansari-abm.github.io/Portfolio/
+link for demo - https://mrarbaz.netlify.app/
 
-A portfolio show skills, experience, and achievements. It highlights my best work, including projects, case studies, and accomplishments. It serves as a professional snapshot, demonstrating your expertise and unique value to potential employers or clients. Tailor it to your strengths and the roles you're targeting.
+This is my personal portfolio website built to showcase my skills, projects, and experience as a Full Stack Web Developer.
 
-On this code we can store data on Google Sheets.
+---
 
-Set the image path by your folder.
+## 🚀 Features
 
-1. login with email.
-2. create heading but condition The name should be same as you gave in your html code under input tag after class, the same name will be written here.
-3. then on the nav click on.
-(1). Extentions then
-(2). Apps Script then
-(3). paste the sheet.txt file which is given.
-(4). Save and Run.
-(5). Deploy >> New devployment >> select type setting icon >> who has accsess(Anyone) >> Deploy.
-(6). Now we have a js link which u need to paste on js code place of url and save.
-(7). Done !!!!!
+- Responsive personal portfolio
+- Modern UI / clean design
+- Projects showcase
+- Skills & About section
+- **Contact Us form with email integration**
+- Deployed on Netlify
+
+---
+
+## 🛠️ Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript
+- React
+- Git & GitHub
+- Netlify (Deployment)
+
+---
+
+## 📩 Contact Form (Important)
+
+The **Contact Us form does NOT use any database**.
+
+### 🔹 How it works:
+- When a user fills the contact form and submits it
+- The message is sent **directly to my email**
+- No data is stored in any database
+
+### 🔹 Data received via Email:
+- User Name
+- User Email
+- Subject
+- Message
+
+This approach ensures:
+- Faster response
+- No database management required
+- Simple and secure communication
+
+---
+
+## 📂 Project Setup (Local)
+
+```bash
+git clone https://github.com/Arbaz-Ansari-ABM/Portfolio.git
+cd Portfolio
+open index.html
+
+👨‍💻 Author
+
+Arbaz Ahmad Ansari
+Full Stack Web Developer
+
+🌐 Portfolio: https://mrarbaz.netlify.app/
+
+📧 Email: arbazahmadansari03@gmail.com
+
+🐙 GitHub: https://github.com/Arbaz-Ansari-ABM
