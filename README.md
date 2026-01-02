@@ -55,7 +55,7 @@ This approach ensures:
 ```bash
 git clone https://github.com/Arbaz-Ansari-ABM/Portfolio.git
 cd Portfolio
-open index.html
+terminal - npm run dev
 
 👨‍💻 Author
 
