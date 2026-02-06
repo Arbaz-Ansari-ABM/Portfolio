@@ -39,7 +39,7 @@ const About = () => {
               I am a passionate full-stack developer eager to kickstart my career in building modern web applications. Skilled in both front-end and back-end development, I specialize in the MERN stack and other emerging technologies to create seamless user experiences and efficient solutions.
           </p>
           <a
-            href="https://drive.google.com/file/d/18DEfzI-SdcWFMigRaM5ugACYpOAjb3NR/view"
+            href="https://drive.google.com/file/d/1mhwAUxnHcv7w8gczaw1Oo9qbaMADxIvn/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block text-white py-3 px-8 rounded-full mt-5 text-lg font-bold transition duration-300 transform hover:scale-105"
