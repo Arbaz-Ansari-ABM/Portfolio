@@ -160,11 +160,11 @@ export const SkillsInfo = [
     {
       id: 2,
       img: vpsLogo,
-      school: "H.M.S Islamia Inter College, Etawah",
+      school: "UP Board - PCM",
       date: "Apr 2020 - March 2021",
       grade: "60%",
       desc: "I completed my class 12 education from H.M.S Islamia Inter College, Etawah, under the UP board, where I studied Physics, Chemistry, and Mathematics (PCM).",
-      degree: "CBSE(XII) - PCM",
+      degree: "H.M.S Islamia Inter College, Etawah",
     },
   ];
   
@@ -181,13 +181,13 @@ export const SkillsInfo = [
     },
     {
       id: 1,
-      title: "CS Prep",
+      title: "Portfolio",
       description:
-        "A full-stack quiz-based platform designed for GATE/UGC NET students to practice previous year questions and create customized tests. The platform offers comprehensive profile stats and detailed results, helping students track and improve their preparation journey effectively.",
+        "A responsive personal portfolio website built using React to showcase projects, skills, and professional experience in a structured and visually engaging manner. The platform highlights work samples, technical expertise, and contact details, providing visitors with a clear overview of the developer’s profile.",
       image: csprepLogo,
-      tags: ["React JS", "Node.js", "MongoDB", "Express", "HTML", "CSS", "JavaScript"],
-      github: "https://github.com/codingmastr/CSPrep",
-      webapp: "https://csprep.netlify.app/",
+      tags: ["React JS", "HTML", "CSS", "JavaScript", "EmailJS"],
+      github: "https://github.com/Arbaz-Ansari-ABM/Portfolio",
+      webapp: "https://mrarbaz.netlify.app/",
     },
     {
       id: 2,
