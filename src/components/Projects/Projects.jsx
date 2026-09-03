@@ -26,7 +26,7 @@ const Projects = () => {
 
       {/* Projects Grid */}
       <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-        {projects.map((project) => (
+        {projects.slice(0, 1).map((project) => (
           <div
             key={project.id}
             onClick={() => handleOpenModal(project)}
